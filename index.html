@@ -7,6 +7,13 @@
 </head>
 <body>
     <h1>Onclick attribute</h1>
-    <button></button>
+    <button onclick="document.body.style.backgroundColor='red'">Yellow</button>
+    <button onclick="document.body.style.backgroundColor='green'">green</button>
+    <button onclick="blue()">blue</button>
+    <script>
+        function blue(){
+            document.body.style.backgroundColor = 'blue'
+        }
+    </script>
 </body>
 </html>

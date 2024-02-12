@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .su {
+            color: palegreen;
+        }
+    
+        #tu {
+            color: blue;
+        }
+    
+        .red li {
+            color: yellow;
+        }
+    
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main id="main-container">
+        <section class="red">
+            <h1 id="tu" class=" ">Welcome My Awsome DOM de baba </h1>
+            <ul>
+                <li class="su ">jalali set</li>
+                <li class="su">Safla tomi kao</li>
+                <li class="su ">bandorbon</li>
+
+            </ul>
+        </section>
+        <section>
+            <p>
+
+            </p>
+            <h1 id="fruits-title" class="some-class  bg-blue  ">My Tabile </h1>
+            <ul>
+                <li>apple</li>
+                <li>banaa</li>
+                <li>Places I like to visit</li>
+            </ul>
+        </section>
+        <section class="text-center">
+            <h1>hello Every body comses withe mee... </h1>
+            <ul>
+                <li>ropali</li>
+                <li>jodda</li>
+                <li>rost</li>
+            </ul>
+        </section>
+    </main>
+    <script src="test.js"></script>
+
+    <script>
+        // const ss =document.getElementById('spcial-title');
+        //  ss='sujon';
+        // console.log(he);
+        const places = document.getElementsByClassName('su');
+        for (const fast of places) {
+            console.log(fast);
+        }
+        // query Selector ALL----'
+        const someli = document.querySelectorAll('.red li');
+        // console.log(someli);
+        for (const li of someli) {
+            console.log(li.innerText);
+        }
+        // opction-get element By id::
+        // opction -get element ByClass:
+        // opction -get elemnt Bu Class name::        
+    </script>
+
+</body>
+
+</html>

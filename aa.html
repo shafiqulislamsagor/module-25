@@ -7,18 +7,20 @@
 </head>
 <body>
     <h1>Hello World</h1>
-    <h2>Assalamualaikum</h2>
+    <h2 id="name">Assalamualaikum</h2>
     <ul>
-        <li>list 1</li>
-        <li>list 2</li>
-        <li>list 3</li>
-        <li>list 4</li>
+        <li class="className">list 1</li>
+        <li class="className">list 2</li>
+        <li class="className">list 3</li>
+        <li class="className">list 4</li>
     </ul>
     <script>
-        const dom = document.getElementsByTagName('li')
+        const dom = document.getElementsByClassName('className');
+        console.log(dom);
         for(let i of dom){
             console.log(i.innerText)
         }
+        
     </script>
 </body>
 </html>

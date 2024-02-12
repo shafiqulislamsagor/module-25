@@ -4,22 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .green{
+            color:red;
+        }
+        .white{
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello World</h1>
     <h2 id="name">Assalamualaikum</h2>
-    <ul>
+    <ul id="fot">
         <li class="className">list 1</li>
-        <li class="className">list 2</li>
-        <li class="className">list 3</li>
+        <li id="secoud" class="className white">list 2</li>
+        <li id="third" class="className">list 3</li>
         <li class="className">list 4</li>
     </ul>
     <script>
-        const dom = document.getElementsByClassName('className');
-        console.log(dom);
+        const dom = document.querySelectorAll('#fot li');
         for(let i of dom){
-            console.log(i.innerText)
+            i.style.background = 'red'
         }
+        document.getElementById('third').classList.add("green");
+        document.getElementById('secoud').classList.remove("white");
+        document.getElementById('third').style.background = 'none';
         
     </script>
 </body>

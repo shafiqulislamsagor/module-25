@@ -7,4 +7,6 @@
 
 const mainContainer = document.getElementById('main-container')
 console.log(mainContainer);
+console.log(mainContainer);
+console.log(mainContainer);
 //ke add korvo ta expalyn korvo akhna::
